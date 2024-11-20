@@ -88,7 +88,7 @@
             <div class="project-tags">
                 <div class="project-tag">
                     <div class="project-tag-heading">
-                        <h3>Duaration</h3>
+                        <h3>Duration</h3>
                     </div>                   
                     <p>10 weeks</p>
                     <p>50%</p>
@@ -133,7 +133,7 @@ efficiency and improve communication among caregivers. Our idea ultimately led t
 needed for each patient, and document patient information. The app's main feature is an AI-powered function that generates summaries for specific categories of information. 
 This summary helps caregivers in elderly care quickly access the right information, ensuring that important details aren’t lost in the large database.<br> <br>
 
-Since the care giver often drives between patiens and often has caries stuff in their hands, we also wanted to include text-to-speach (TTS) and speach-to-text (STT) to make the app more accesive and make sure the user can 
+Since the care giver often drives between patiens and often has caries stuff in their hands, we also wanted to include text-to-speech (TTS) and speech-to-text (STT) to make the app more accesive and make sure the user can 
 dokument and access information without using their hands. 
 
                 
@@ -156,7 +156,7 @@ dokument and access information without using their hands.
             <p>To generate documentation summaries, we used OpenAI’s language model. The endpoint for creating summaries takes the patient’s ID and category, then creates a summary from all the information from that specific category.</p> <br><br>
             <h4>Data storage</h4>
             <p>To store the data, we used Firebase Firestore, a cloud-based NoSQL database that stores data in document format. </p><br> <br>
-            <h4>Speach to text & text to speach</h4>
+            <h4>Speech to text & text to speech</h4>
             <p>For the TTS implementation, OpenAI's "Echo" API was used. The user's text is sent to the Node server, then to the API, which returns the audio. The server converts the audio to base64 format, which is sent back to the client and played as a sound file.
                 For STT, we used Epo-AV to record the sound from the user and convert it to a base64. The coded audiofile was the sent to a server where OpenAI’s API Whiser that transcripted the audiofile and converted it to text.</p>
         </div>
@@ -212,7 +212,7 @@ dokument and access information without using their hands.
             </div>
             <div class="demo">
                 <img src="./images/care12.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
-                <p>12. Ddd doc. by speach</p>
+                <p>12. Ddd doc. by speech</p>
             </div>
             <div class="demo">
                 <img src="./images/care17.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
