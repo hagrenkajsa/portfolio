@@ -10,6 +10,10 @@
     --text-color: rgb(47, 47, 47);
     --white-color: #ffffff;
 }
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
 
 
 
