@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 :root {
     --primary-color: #3A4FD9;
@@ -10,10 +11,7 @@
     --text-color: rgb(47, 47, 47);
     --white-color: #ffffff;
 }
-html, body {
-    overflow: hidden;
 
-}
 
 
 
