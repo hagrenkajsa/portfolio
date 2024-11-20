@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #3A4FD9;
+    --secondary-color: #ECF3FF;
+    --background-color: #f9f9f9;
+    --text-color: rgb(47, 47, 47);
+    --white-color: #ffffff;
+}
+
+
+
+header {
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: 1000; 
+    background-color: var(--primary-color);
+    justify-content: center;
+    padding: 2%;
+}
+.line{
+    display: flex;
+    justify-content:center;
+    width: 50%;
+    border-bottom: 0.5px solid #0d0d0d; 
+    padding-bottom: 2px; 
+    text-decoration: none; 
+}
+.line-short{
+    display: flex;
+    justify-content:center;
+    width: 25%;
+    border-bottom: 0.5px solid #0d0d0d;
+    padding-bottom: 2px; 
+    text-decoration: none; 
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+
+    justify-content: center;
+}
+
+.menu {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+nav {
+    margin-left: auto;
+    width: 40%;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+nav a {
+    text-decoration: none; 
+    color: var(--primary-color); 
+    font-size: 18px; 
+}
+nav a:hover {
+    color:var(--secondary-color); 
+}
+
+
+
+
+
+title, h1, h2, h3, h5, p, a{
+    font-family: "Chango", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--text-color);
+}
+h1{
+    font-size: 3em;
+    font-weight: 800;
+}
+h2{
+    font-size: 2em;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 1%;
+
+}
+h4{
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: bold; 
+
+    font-size: 1em;
+    text-decoration: none;
+}
+h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 0.5%;
+
+}
+a{
+    font-weight: bold;
+    color: var(--white-color); 
+    
+}
+
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify; 
+    line-height: 1.5em;
+
+}
+
+nav a {
+    color: var(--white-color); 
+
+}
+
+
+
+/*----------BODY-----------*/
+
+body{
+    background-color:var(--backgroun-color);
+    height: 100%;
+    }
+
+
+.intro{
+    display: grid;
+    grid-template-columns: 49% 49%; 
+    justify-content: center;
+    margin: 10%;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#introduction{
+    margin-top: 10%;
+    line-height: 2em;
+}
+.knowledge{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
+}
+.category{
+    margin-top: 7%;
+}
+.tags{
+    width: 100%;
+    height: 370px;
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.tag-list ul h4{
+    border-bottom: 0.5px solid var(--text-color); 
+    padding-bottom: 2px; 
+    text-decoration: none; 
+    margin-bottom: 10px;
+    display: inline-block;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify; 
+    
+}
+.competence-tag{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 100%;
+    width: 37%;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+  
+}
+.proficency-tag{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 100%;
+    width: 57%;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+   
+  
+}
+.advanced-basic{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.tag-name{
+    border-bottom: 0.5px solid var(--text-color); 
+    padding-bottom: 4px; 
+    text-decoration: none; 
+    margin-bottom: 25px;
+}
+
+
+.tag-list ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.tag-list li {
+    margin-bottom: 7px; 
+}
+
+
+
+
+ 
+ /* middle screen */
+@media (max-width: 1150px) {
+    nav {
+
+        width: 60%;
+    }
+    nav ul {
+        width: 100%;
+    }
+    p{
+        font-weight: 400;
+        font-size: 0.9em;
+
+    }
+    h1{
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .title{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    header{
+        margin-bottom: 4%;
+    }
+    .knowledge{
+        padding-left: 8%;
+        padding-right: 8%; 
+    }
+    .tags{
+        height: 340px;
+        margin-bottom: 10%;
+    }
+    .competence-tag{
+        margin-bottom: 5%;
+    }
+    .category{
+        margin-top: 10%;
+    }
+    .intro{
+   
+
+        margin-bottom: 10%;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+}
+    
+
+/* small screen */
+@media (max-width: 850px) {
+    header{
+        background-color: var(--white-color);
+        margin-bottom: 0%;
+    }
+    .heading{
+
+        margin-top: -5%;
+        margin-bottom: 10%;
+
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        align-items: flex-start;
+        position: absolute; 
+        top: 0px; 
+        right: 0;
+        background-color: var(--primary-color); 
+        width: 40%;
+        height: 80%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 5%;
+        z-index: 500;
+    }
+
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    nav.active ul {
+        display: flex; 
+    }
+    nav.active .closeButton {
+        display: block;
+        z-index: 10000;
+    }
+
+    .intro{
+        display: grid;
+        grid-template-columns: 80%; 
+        margin: 2%;
+    }
+    .image {
+        order: -1; 
+        align-items: flex-start;
+    }
+    .title{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+ 
+    .tags{
+        flex-direction: column;
+        height: 600px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .competence-tag{
+        width: 65%;
+        padding: 4%;
+    }
+    .proficency-tag{
+        width: 65%;
+        padding: 4%;
+    }
+    .tag-list {
+        display: flex;
+        justify-content: center;
+  
+    }
+    .tag-name{
+        text-align: center;
+    }
+
+}
+

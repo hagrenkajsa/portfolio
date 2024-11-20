@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProjects.css">
+    <link rel="stylesheet" href="hamburger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+<header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><h3><a href="index.html">Home</a></h3></li>
+                <li><h3><a href="about.html">About</a></h3></li>
+                <li><h3><a href="projects.html">Projects</a></h3></li>
+            </ul>            
+        </nav>
+   
+    </div>
+    <div class="off-screen-menu">
+        <ul>
+            <li><h3><a href="index.html">Home</a></h3></li>
+            <li><h3><a href="about.html">About</a></h3></li>
+            <li><h3><a href="projects.html">Projects</a></h3></li>
+        </ul>
+    </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+         </nav>
+    
+    <!--Handles toggle with hamburger menu-->
+    <script src="hamScript.js"></script>
+</header>
+<div class="back-to-projects">
+        <a href="projects.html" role="button" >
+            <svg width="35" height="35" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 23L1 12L12 1" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>     
+</div>
+<div class="back-to-projects-small">
+    <a href="projects.html" role="button" >
+        <svg width="20" height="20" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 23L1 12L12 1" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>     
+</div>
+
+
+        <div class="project">
+            <div class="projectSummary">
+
+                <div class="description"> 
+                    <h2>Food Map</h2> <br>
+                    <p>As a course project, a classmate and I created a React web application called Food Map. The application uses two APIs to allow users to search for locations, scroll through a list of all the restaurants within the visible map area, and navigate the map using the pointer.</p>
+                       
+                </div>
+           
+
+            </div>
+            <div class="projectMocup">
+                <div class="mockup">
+                    <img src="/Users/kajsahagren/Documents/Portfolio/images/food_map.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="project-info">
+            <div class="project-tags">
+                <div class="project-tag">
+                    <div class="project-tag-heading">
+                        <h3>Duaration</h3>
+                    </div>                   
+                    <p>10 weeks</p>
+                    <p>50%</p>
+                </div>
+                <div class="project-tag">
+                    <div class="project-tag-heading">
+                        <h3>Role</h3>
+                    </div>                   
+                    <p>Back-End</p>
+                    <p>Front-End</p>
+                </div>
+                <div class="project-tag">
+                    <div class="project-tag-heading">
+                        <h3>Tools</h3>
+                    </div>                   
+                    <p>React</p>
+                    <p>Figma</p>
+                    <p>Firebase</p>
+    
+                </div>
+            </div>
+        <div class="info-block">
+            <h3>Task</h3>
+            <p> 
+                Our task was to create a website by integrating and combining two different APIs. We were free to use any framework we preferred, with the focus placed on functionality and API integration rather than the design. </p>
+                <br>
+               
+            </div>
+            <div class="info-block">
+                <h3>Concept idea</h3>
+                <p>We came up with the idea to use a map API and combine it with an API that handles restaurants. Using these two, the user should be able to find restaurants given the location from the map. 
+                    </p>
+            </div>
+        <div class="info-block">
+            <h3>Process</h3>
+            <p>My group mate and I collaborated using pair programming. This allowed us to work efficiently and review each other's code for quality. <br><br>
+                The challenge was planning how the two systems should interact with each other. For example, it was difficult to figure out how to retrieve all the restaurants within the map area because we initially only used one specific location on the map. We later solved this by taking the corners of the map and fetching all the restaurants within that area.
+            </p>
+        </div>
+        <div class="info-block">
+            <h3>Result</h3>
+            <p> We successfully integrated the two APIs, enabling the website to function properly. The website allowed users to search for locations, scroll through a list of all the restaurants within the visible map area, and navigate the map using the pointer. Additionally, users could create an account to save their favorite restaurants for future reference. </p>
+        </div>
+            
+        </div>
+            
+</div>
+     
+
+   
+
+</body>
+
+</html>
