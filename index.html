@@ -25,8 +25,8 @@
         <nav>
             <ul>
                 <li><h3><a href="#home">Home</a></h3></li>
-                <li><h3><a href="#about">About</a></h3></li>
                 <li><h3><a href="#projects">Projects</a></h3></li>
+                <li><h3><a href="#about">About</a></h3></li>
             </ul>            
         </nav>
    
@@ -49,7 +49,7 @@
     <!--Handles toggle with hamburger  menu-->
     <script src="hamScript.js"></script>
 </header>
-
+<section id="home">
         <div class="intro">
             <div class="aboutMe">
                 <h1>Hello, I'm<br>
@@ -65,6 +65,7 @@
                     <img src="./images/meee.png" alt="Beskrivning av bilden" style="width: 60%; height: auto;">
                 </div>
         </div>
+    </section>
         <div class="vertical">
             <div class="vertical-line"> </div>
         </div>
@@ -108,7 +109,7 @@
                 <div class="projectSummary">
                     <h2>StoryAI</h2> 
                     <div class="description"> 
-                        <p>Throughout a course project, my team and I designed and developed an application that utilized AI to automatically generate children's stories. The story's content was based on user inputs, including character details, environments, and plot preferences. A fun project where the biggest challenge was to implement and interact with OpenAI's API to optimize the story based on the user's preferences.</p>
+                        <p>Throughout a course project, my team and I designed and developed an application that utilized AI to automatically generate children's stories. The story's content was based on user inputs, including character details, environments and plot preferences. A fun project where the biggest challenge was to implement and interact with OpenAI's API to optimize the story based on the user's preferences.</p>
                     </div>
                     <div class="viewMore">
                         <a href="storyAI.html" role="button" class="viewMoreButton">
@@ -204,7 +205,7 @@
                 <div class="line-short"></div>
             </div>
 
-            <div class="project">
+            <!-- <div class="project">
                 <div class="projectSummary">
                     <h2>Thesis</h2>
                     <div class="description"> 
@@ -224,23 +225,45 @@
                         <img src="./images/security.png" alt="Beskrivning av bilden" style="width: auto; height: 80%;">
                     </div>
                 </div>
-            </div>
+            </div> -->
            
 
     </div>
 </section>
 
-<div class="vertical">
+<!-- <div class="vertical">
     <div class="vertical-line"> </div>
-</div>
+</div> -->
 
-<div class="title">
-    <div class="line">
-        <h1>About Me</h1>
-    </div>
-</div>
+
 <section id="about">
     <div class="knowledge">
+      
+        <h2 id="who">Who am I?</h2>
+
+       
+        <div class="category">
+            <h3>My Academic Background</h3> <br>
+            <h5>Master of Science Program in Interaction Technology and Design - Umeå University, Aug 2020 - Jun 2025</h5>
+            <p>The program combines computer science and interaction design, where we have developed the skills to create both the interface and the underlying technology behind applications, websites, systems and other digital services, with a strong focus on the users’ needs. Design thinking and agile work flow are commonly used in our projects to create an outstanding user experience.</p>
+            <br>
+            <h5>South Korea, Exchange semester - Chung-Ang University, Aug 2024 - Jan 2025 </h5>
+            <p>During my studies, I went on an exchange semester in South Korea, where I combined my major with exploring Korean food, culture and nature. I met many interesting people from all over the world and have learned a lot about them and their cultures, something I believe will be useful in my future work.</p>
+        </div>
+    
+        <div class="category">
+            <h3>My Strengths</h3> <br>
+    
+            <h5>UX & UI design</h5>
+            <p>One of my strongest skills and passions lies in UX design, where I find it fascinating to research user behavior, perception and problems and to explore how to meet their needs with solutions that are both aesthetic and functional. I strive to create experiences that go beyond expectations. I have a keen eye for shape, color, and content hierarchy, and I always keep the user’s perspective at the forefront of my design process. <br> <br> 
+                My greatest strength is my creativity. I love exploring new approaches to design, blending innovative ideas with established design 
+                principles and always a strong focus on accessibility. </p> <br> <br>
+            <h5>Front-End development</h5>
+            <p>In addition to UX design, I have a strong interest in front-end development. Most of my experience is in implementing mobile applications using React Native with JavaScript, as well as developing web applications with React. My solid CSS skills allow me to experiment with colors, shapes and UI structure, which is my favorite part of the front-end development!
+                <br> <br> Through my education, I’ve also gained foundational knowledge in back-end development. While back-end isn't my primary focus, this background gives me valuable insight into what's possible when designing for users, providing a fuller perspective that I find beneficial when working on various projects. </p> <br> <br>
+                <h5>Service Design</h5>
+                <p>A relatively newly discovered area for me is my interest in service design. I find it really interesting and enjoyable to research a context and design a solution where not only the design itself is important, but also the value it creates for the user, the customer and the company. I understand the importance of researching the area, defining the underlying problem, designing a solution, testing it and packaging it in a way that satisfies different types of customers.</p>
+            </div>
         <div class="tags">
             <div class="competence-tag">
                 <div class="tag-name">
@@ -252,10 +275,12 @@
                         <li><p>UX & UI</p></li>
                         <li><p>User Research</p></li>
                         <li><p>User Testing</p></li>
-                        <li><p>Prototyping</p></li>
                         <li><p>Front-End</p></li>
+                        <li><p>Service Design</p></li>
+                        <li><p>Prototyping</p></li>
                         <li><p>AI as a tool</p></li>
                         <li><p>Agile workflow</p></li>
+                        <li><p>Design Thinking</p></li>
                     </ul>
                 </div>
             </div>
@@ -290,31 +315,39 @@
             </div>
     
         </div>
-        <div class="category">
-            <h3>My Education Background</h3> <br>
-        
-            <h5>Master of Science Program in Interaction Technology and Design - Umeå University, Aug 2020 - Jun 2025</h5>
-            <p>The program combines computer science and interaction design, where we learn how to research, ideate, design, develop, and test our solutions with a focus on customer needs and creating an outstanding user experience. The program has given me a broad understanding of system development, problem-solving, and how to design to satisfy users' needs.</p>
-            <br>
-            <h5>South Korea, Exchange semester - Chung-Ang University, Aug 2024 - Jan 2025 </h5>
-            <p>I am currently spending an exchange semester in South Korea, where I combine my studies with exploring Korean food, culture, and nature. I have met many interesting people from all over the world and have learned a lot about them and their cultures, something I believe will be useful in my future work.</p>
-        </div>
-    
-        <div class="category">
-            <h3>My Strengths</h3> <br>
-    
-            <h5>UX & UI design</h5>
-            <p>One of my strongest skills and passion lies in UX design. I have a keen eye for shape, color, and content hierarchy, always keeping the user’s 
-                perspective at the forefront of my design process. <br> <br> 
-                My greatest strength is my creativity. I love exploring new approaches to design, blending innovative ideas with established design 
-                principles and a strong focus on accessibility. </p> <br> <br>
-            <h5>Front-End development</h5>
-            <p>In addition to UX design, I have a strong interest in front-end development. Most of my experience is in implementing mobile applications using React Native with JavaScript, as well as developing web applications with React. My solid CSS skills allow me to experiment with colors, shapes, and UI structure, which is my favorite part of the front-end development!
-                <br> <br> Through my education, I’ve also gained foundational knowledge in back-end development. While back-end isn't my primary focus, this background gives me valuable insight into what's possible when designing for users, providing a fuller perspective that I find beneficial when working on various projects. </p>
-        </div>
         
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("nav a[href^='#']");
+  
+      function activateMenuLink() {
+        let scrollY = window.scrollY;
+  
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 150;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute("id");
+  
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === `#${sectionId}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }
+  
+      window.addEventListener("scroll", activateMenuLink);
+    });
+  </script>
+  
 </body>
+
+
 
 </html>

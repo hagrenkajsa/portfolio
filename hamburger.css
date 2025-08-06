@@ -16,7 +16,14 @@
     }
       
     .off-screen-menu{
-        background-color: var(--primary-color);
+         /*liquid glass*/
+         background: rgba(255, 255, 255, 0.271); /* transparent vit */
+         backdrop-filter: blur(10px);
+         -webkit-backdrop-filter: blur(10px); 
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         border-radius: 20px;
+         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+         
         height: 100vh;
         width: 100%;
         max-width: 450px;
@@ -40,10 +47,12 @@
     
     
     .ham-menu{
+        position: fixed;         /* Se till att den inte påverkas av andra element */
+
         height: 50px;
         width: 50px;
-        margin-left: auto;
-        position: relative;
+        right: 20px;
+    
     }
     
     .ham-menu span{
@@ -68,15 +77,15 @@
     .ham-menu.active span:nth-child(1){
         top: 50%;
         transform: translate(-50%, 50%) rotate(45deg);
-        background-color: var(--white-color);
+        background-color: var(--primary-color);
     }
     .ham-menu.active span:nth-child(2){
         opacity: 0;
-        background-color: var(--white-color);
+        background-color: var(--primary-color);
     }
     .ham-menu.active span:nth-child(3){
         top: 50%;
         transform: translate(-50%, 50%) rotate(-45deg);
-        background-color: var(--white-color);
+        background-color: var(--primary-color);
     }
 }
