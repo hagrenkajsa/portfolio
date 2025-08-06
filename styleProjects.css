@@ -269,4 +269,21 @@
     }
     .back-to-projects-small{
         display: flex;
-        top: 45px
+        top: 45px;
+        left: 20px;
+    }
+    .back-to-projects{
+        display: none;
+    }
+    .viewMore{
+        margin-top: 4%;
+    
+    }
+    .projectSummary{
+        margin-bottom: 6%;
+        margin-top: 6%;
+    }
+
+}
+
+
