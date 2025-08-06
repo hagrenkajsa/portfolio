@@ -23,5 +23,20 @@ document.getElementById("backToTop").onclick = function() {
 };
 
 
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("about.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("about-section").innerHTML = data;
+      });
+  
+    fetch("projects.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("projects-section").innerHTML = data;
+      });
+  });
+
 
 

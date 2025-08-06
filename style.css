@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-color: #3A4FD9;
     --secondary-color: #ECF3FF;
@@ -11,14 +12,23 @@
     --white-color: #ffffff;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 
+  }
 
 header {
+    position: fixed;
+    top: 0;                 
+    z-index: 1000; 
     top: 0; 
     width: 100%;
-    height: 100%;
+    height: 0%;
     z-index: 1000; 
-    background-color: var(--primary-color);
+    background-color: transparent;
     justify-content: center;
     padding: 2%;
 }
@@ -55,6 +65,7 @@ header {
 nav {
     margin-left: auto;
     width: 40%;
+    
 }
 
 nav ul {
@@ -131,7 +142,7 @@ p{
 }
 
 nav a {
-    color: var(--white-color); 
+    --primary-color: #3A4FD9;
 
 }
 
@@ -139,25 +150,45 @@ nav a {
 
 /*----------BODY-----------*/
 
-body{
-    background-color:var(--backgroun-color);
+body {
+    background: radial-gradient(circle, #e9ecfc, #dadbff); /* Ljusblå gradient */
     height: 100%;
-    }
-
-
+}
 .intro{
     display: grid;
     grid-template-columns: 49% 49%; 
     justify-content: center;
-    margin: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+ 
 }
+.vertical{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; 
+    padding-top: 5%;
 
+}
+.vertical-line {
+    width: 1px;
+    height: 100%;
+    background-color: #0d0d0d; /* Svart linje */
+    
+  }
+  
 .aboutMe{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     height: 100%;
+
+
+
+
 }
 .image{
     display: flex;
@@ -178,6 +209,9 @@ body{
     padding-left: 15%;
     padding-right: 15%;
     margin-bottom: 5%;
+
+
+
 }
 .category{
     margin-top: 7%;
@@ -206,24 +240,34 @@ body{
     
 }
 .competence-tag{
-    background-color: var(--secondary-color);
     border-radius: 20px;
     height: 100%;
     width: 37%;
     padding: 4%;
     padding-left: 8%;
     padding-right: 8%;
+     /*liquid glass*/
+    background: rgba(255, 255, 255, 0.271); /* transparent vit */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   
 }
 .proficency-tag{
-    background-color: var(--secondary-color);
     border-radius: 20px;
     height: 100%;
     width: 57%;
     padding: 4%;
     padding-left: 8%;
     padding-right: 8%;
+     /*liquid glass*/
+    background: rgba(255, 255, 255, 0.271); /* transparent vit */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    
   
 }
@@ -256,6 +300,11 @@ body{
  
  /* middle screen */
 @media (max-width: 1150px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
     nav {
 
         width: 60%;
@@ -277,7 +326,7 @@ body{
         margin-bottom: 0%;
     }
     header{
-        margin-bottom: 4%;
+        margin-bottom: 10%;
     }
     .knowledge{
         padding-left: 8%;
@@ -307,8 +356,13 @@ body{
 
 /* small screen */
 @media (max-width: 850px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
     header{
-        background-color: var(--white-color);
+        background-color: transparent;
         margin-bottom: 0%;
     }
     .heading{
