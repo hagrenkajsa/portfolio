@@ -94,7 +94,15 @@
     width: 100%;
     height: 100%;
     height: 500px;
+    transition: transform 0.2s ease, color 0.2s ease;
+
 }
+.projectMocup:hover{
+    transform: scale(1.08);
+}
+
+
+
 .mockup{
     width: 90%;
     height: 100%;

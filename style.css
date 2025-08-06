@@ -131,6 +131,9 @@ h3{
 }
 h4{
     font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+}
+a h4{
     color: var(--white-color);
 }
 li h4{
@@ -247,6 +250,7 @@ body {
 
 #who{
     padding-bottom: 7%;
+    padding-top: 7%;
 }
 
 .knowledge{
@@ -285,7 +289,7 @@ body {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
   
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: justify; 
 }
 
@@ -381,9 +385,8 @@ body {
       
     }
     .knowledge{
-        padding-left: 8%;
-        padding-right: 8%; 
-        padding-bottom: 5%;
+       padding: 10%;
+       margin-top: 5%;
     }
     .tags{
         height: 340px;
