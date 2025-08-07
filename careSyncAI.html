@@ -51,7 +51,7 @@
             </div>
             <div class="projectMocup">
                 <div class="mockup">
-                    <img src="./images/caresynkImage.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                    <img id="radius" src="./images/caresynkImage.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                 </div>
             </div>
         </div>
@@ -119,16 +119,18 @@ Since caregivers often travel between patients and carry items in their hands, w
         <div class="info-block">
             <h3>Process</h3>
             <p>The process was based on an agile workflow where we all collaborated mostly but each person had extra responsibiulities of its expertise area.Early in the process, we realised our system would be very complex, partly becouse the way elderly care works and partly becouse the information that is being handled is extreamly sensitive.Becouse of this, we put a lot of our time for the logistic flow in the application. When the design was tested and ready, we started to implement it.</p> <br> <br>  
-        <h4>Design</h4>
+        <h5>Design</h5>
         <p>When working on the design, we first created a requirement specification for all the functionality in the app. We then created a flow for the different functions.This part was challenging because of the complexity required by the system, and there were many factors we had to consider when making decisions. The key aspects in this phase were focusing on information hierarchy, accessibility, and prioritization. <br><br>
             Once the flow was ready, we designed wireframes, low-fidelity (lo-fi), and finally high-fidelity (hi-fi) prototypes. The design process involved several iterations after testing the prototypes with users.All designs were created in Figma, and we developed a component library to make the design process more flexible and the UI more cohesive.</p> <br> <br>
-            <h4>Graphic profile</h4> <br><br>
-            <img src="./images/care_profil.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;"> <br><br>
-            <h4>AI</h4>
+            <h5>Graphic profile</h5> <br><br>
+            <img src="./images/careGP.png" alt="Beskrivning av bilden" style="width: auto; height: 30vh;"> <br><br>
+            <img src="./images/careT.png" alt="Beskrivning av bilden" style="width: auto; height: 20vh;"> <br><br>
+
+            <h5>AI</h5>
             <p>To generate documentation summaries, we used OpenAI’s language model. The endpoint for creating summaries takes the patient’s ID and category, then creates a summary from all the information from that specific category.</p> <br><br>
-            <h4>Data storage</h4>
+            <h5>Data storage</h5>
             <p>To store the data, we used Firebase Firestore, a cloud-based NoSQL database that stores data in document format. </p><br> <br>
-            <h4>Speech to text & text to speech</h4>
+            <h5>Speech to text & text to speech</h5>
             <p>For the TTS implementation, OpenAI's "Echo" API was used. The user's text is sent to the Node server, then to the API, which returns the audio. The server converts the audio to base64 format, which is sent back to the client and played as a sound file.
                 For STT, we used Epo-AV to record the sound from the user and convert it to a base64. The coded audiofile was the sent to a server where OpenAI’s API Whiser that transcripted the audiofile and converted it to text.</p>
         </div>
@@ -138,98 +140,91 @@ Since caregivers often travel between patients and carry items in their hands, w
         </div>
         <div class="project-demo">
             <div class="demo">
-                <img src="./images/care1.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care1.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>1. Calendar and schedule: Here, the worker can see when and where all the appointments are scheduled. Click on one appointment to see more details about the patient and the appointment.</p>
             </div>
             <div class="demo">
-                <img src="./images/care2.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care2.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>2. When you open an appointment, you will see an overview of that appointment as well as all the other appointments for that specific patient.</p>
             </div>
             <div class="demo">
-                <img src="./images/care3.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care3.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>3. Expand the appointment to access the to-do list</p>
             </div>   
             <div class="demo">
-                <img src="./images/care4.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care4.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>4. Expand each task to get more details about it</p>
             </div>        
             <div class="demo">
-                <img src="./images/care5.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care5.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>5. When all the items in the to-do list are marked as done, you will see that the appointment is marked as finished.</p>
             </div>
             <div class="demo">
-                <img src="./images/care6.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care6.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>6. Slide down to get patient details</p>
             </div>
             <div class="demo">
-                <img src="./images/care7.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care7.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>7. Documentation of patient. Here you can add and read documentation in specific categories.</p>
             </div>
             <div class="demo">
-                <img src="./images/care8.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care8.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>8. View all documentation within the specific categories by expanding the categories</p>
             </div>
             <div class="demo">
-                <img src="./images/care9.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care9.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>9. 
                     Read the AI summary documentation. Use the filter to access the relevant information.</p>
             </div>   
             <div class="demo">
-                <img src="./images/care10.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care10.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>10. Add new documentation</p>
             </div>        
             <div class="demo">
-                <img src="./images/care11.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care11.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>11. Add documentation in category "omvårdnad"</p>
             </div>
             <div class="demo">
-                <img src="./images/care12.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care12.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>12. Ddd documentation by speech</p>
             </div>
             <div class="demo">
-                <img src="./images/care17.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care17.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>13. Confirm or edit the generated text </p>
             </div>          
             <div class="demo">
-                <img src="./images/care13.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care13.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>14. Add documentaiton by text</p>
             </div>
             <div class="demo">
-                <img src="./images/care14.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care14.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>15. Documentation added</p>
             </div>
             <div class="demo">
-                <img src="./images/care15.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care15.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>16. When the documentation is complete, you need to sign.</p>
             </div>
             <div class="demo">
-                <img src="./images/care16.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care16.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>17. Signature confirmed</p>
             </div>   
         
             <div class="demo">
-                <img src="./images/care18.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care18.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>18. Doc. for all patients in schedule</p>
             </div>
             <div class="demo">
-                <img src="./images/care19.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care19.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>19. List of all patients</p>
             </div>   
             <div class="demo">
-                <img src="./images/care20.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
+                <img id="radius" src="./images/care20.png" alt="Beskrivning av bilden" style="width: auto; height: 400px;">
                 <p>20. News</p>
             </div>     
-            
+        
+            <div class="space">
 
-        </div>
-            
-        </div>
-
-            
-
-     
-
-   
+            </div>
 
 </body>
 
