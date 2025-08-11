@@ -83,14 +83,12 @@ nav ul {
     justify-content: space-evenly;
 
          /*liquid glass*/
-         background: rgba(255, 255, 255, 0.271); /* transparent vit */
+         background: rgba(255, 255, 255, 0.042); /* transparent vit */
          backdrop-filter: blur(10px);
          -webkit-backdrop-filter: blur(10px); 
          border: 1px solid rgba(255, 255, 255, 0.3);
          border-radius: 20px;
          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    
-
 }
 nav a {
     text-decoration: none; 
@@ -203,7 +201,7 @@ nav a, li h3:hover {
 /*----------BODY-----------*/
 
 body {
-    background: radial-gradient(circle, #e9ecfc, #cfdafd); /* Ljusblå gradient */
+    background: radial-gradient(circle, #f6ffff, #d5dbff); /* Ljusblå gradient */
     height: 100%;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -216,7 +214,7 @@ body {
     margin-top: 10%;
     margin-right: 10%;
     margin-left: 10%;
-    padding-top: 90px;
+
  
 }
 .vertical{

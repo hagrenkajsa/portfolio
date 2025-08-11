@@ -40,3 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+//Home - back to top
+
+document.getElementById("scrollToTop").addEventListener("click", function(e) {
+    e.preventDefault(); // stoppar vanlig länk-navigation
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

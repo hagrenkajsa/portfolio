@@ -21,7 +21,7 @@
          backdrop-filter: blur(10px);
          -webkit-backdrop-filter: blur(10px); 
          border: 1px solid rgba(255, 255, 255, 0.3);
-         border-radius: 20px;
+       
          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
          
         height: 100vh;
@@ -48,16 +48,34 @@
     
     .ham-menu{
         position: fixed;         /* Se till att den inte påverkas av andra element */
-
+        background-color: white;
         height: 50px;
-        width: 50px;
+        border-radius: 5px;
+        width: 60px;
         right: 20px;
+
+                 /*liquid glass*/
+                 background: rgba(255, 255, 255, 0.271); /* transparent vit */
+                 backdrop-filter: blur(10px);
+                 -webkit-backdrop-filter: blur(10px); 
+                 border: 1px solid rgba(255, 255, 255, 0.3);
+            
+                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     
     }
+
+    .ham-menu.active {
+        background: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+    }
+    
     
     .ham-menu span{
         height: 5px;
-        width: 100%;
+        width: 80%;
         background-color: var(--primary-color);
         border-radius: 25px;
         position: absolute;

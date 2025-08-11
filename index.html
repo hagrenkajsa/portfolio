@@ -24,7 +24,7 @@
     <div class="menu">
         <nav>
             <ul>
-                <li><h3><a href="#home">Home</a></h3></li>
+                <li><h3><a href="#" id="scrollToTop">Home</a></h3></li>
                 <li><h3><a href="#projects">Projects</a></h3></li>
                 <li><h3><a href="#about">About</a></h3></li>
             </ul>            
@@ -62,7 +62,7 @@
              
             </div>
                 <div class="image">
-                    <img id="radius" id="hover" src="./images/meee.png" alt="Beskrivning av bilden" style="width: 60%; height: auto;">
+                    <img id="hover" src="./images/meee.png" alt="Beskrivning av bilden" style="max-width: 70%; height: auto;">
                 </div>
         </div>
     </section>
@@ -82,6 +82,27 @@
     <div class="projects">
         <div class="project">
             <div class="projectSummary">
+                <h2>Truck Security</h2>
+                <div class="description"> 
+                    <p>When concluding my studies, I completed my master’s thesis in collaboration with Volvo Group at their Experience Design team. The focus of my research was to develop a tangible concept for a holistic security system that enhances security for truck drivers in relation to cargo and fuel theft on the road. The project followed the Design Thinking methodology in order to understand user needs and from that, design an add-on service that creates value for all stakeholders, including the driver, fleet owners and Volvo Group.</p>   
+                </div>
+                <div class="viewMore">
+                    <a href="thesis.html" role="button" class="viewMoreButton">
+                        <h4>Show more</h4>
+                        <svg width="21" height="15" viewBox="0 0 21 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 39L20 20L1 1" stroke="#FFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>     
+                </div> 
+            </div>
+            <div class="projectMocup">
+                <div class="mockup">
+                    <img id="hover" src="./images/security.png" alt="Beskrivning av bilden" style="width: auto; height: 90%;">
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="projectSummary">
                 <h2>CareSyncAI</h2>
                 <div class="description"> 
                     <p>As part of a project in collaboration with a company called Daresay, my team and I designed and implemented a native mobile application for elderly home care. The purpose of the application is to facilitate communication and planning of shifts between the staff and management. One main function in the application is an AI feature that auto-generates a summary from the latest documentation about the elderly.</p>   
@@ -97,7 +118,7 @@
             </div>
             <div class="projectMocup">
                 <div class="mockup">
-                    <img id="radius" id="hover" src="./images/caresynkImage.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                    <img id="hover" src="./images/caresynkImage.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                 </div>
             </div>
         </div>
@@ -123,7 +144,7 @@
                 </div>
                 <div class="projectMocup">
                     <div class="mockup">
-                        <img id="radius" id="hover" src="./images/storyAI.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                        <img id="hover" src="./images/storyAI.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                     </div>
                 </div>
             </div>
@@ -148,7 +169,7 @@
                 </div>
                 <div class="projectMocup">
                     <div class="mockup">
-                        <img id="radius" id="hover" src="./images/mquiz.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                        <img id="hover" src="./images/mquiz.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                     </div>
                 </div>
             </div>
@@ -172,7 +193,7 @@
                 </div>
                 <div class="projectMocup">
                     <div class="mockup">
-                        <img id="radius" id="hover" src="./images/pepper.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                        <img id="hover" src="./images/pepper.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                     </div>
                 </div>
             </div>
@@ -197,35 +218,13 @@
                 </div>
                 <div class="projectMocup">
                     <div class="mockup">
-                        <img id="radius" id="hover" src="./images/food_map.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
+                        <img id="hover" src="./images/food_map.png" alt="Beskrivning av bilden" style="width: auto; height: 100%;">
                     </div>
                 </div>
             </div>
             <div class="title">
                 <div class="line-short"></div>
             </div>
-
-            <!-- <div class="project">
-                <div class="projectSummary">
-                    <h2>Thesis</h2>
-                    <div class="description"> 
-                        <p>As a course project, a classmate and I created a React web application called FoodMap. The application uses two APIs to allow users to search for locations, scroll through a list of all the restaurants within the visible map area, and navigate the map using the pointer. </p>
-                    </div>
-                    <div class="viewMore">
-                        <a href="thesis.html" role="button" class="viewMoreButton">
-                            <h4>Show more</h4>
-                            <svg width="21" height="15" viewBox="0 0 21 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 39L20 20L1 1" stroke="#FFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>     
-                    </div> 
-                </div>
-                <div class="projectMocup">
-                    <div class="mockup">
-                        <img id="radius" src="./images/security.png" alt="Beskrivning av bilden" style="width: auto; height: 80%;">
-                    </div>
-                </div>
-            </div> -->
            
 
     </div>
@@ -292,7 +291,7 @@
                     <div class="tag-list">
                         
                         <ul>
-                            <li><h4>Advanced</h4></li> 
+                            <li><h5>Advanced</h5></li> 
                             <li><p>Figma</p></li>
                             <li><p>React Native</p></li>
                             <li><p>JavaScript</p></li>
@@ -302,7 +301,7 @@
                     </div>
                     <div class="tag-list">
                         <ul>
-                            <li><h4>Basic</h4></li> 
+                            <li><h5>Basic</h5></li> 
                             <li><p>.NET</p></li>
                             <li><p>SQL</p></li></li>
                             <li><p>C</p></li></li>
