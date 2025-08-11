@@ -49,3 +49,41 @@ document.getElementById("scrollToTop").addEventListener("click", function(e) {
         behavior: "smooth"
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("nav a[href^='#']");
+  const homeLink = document.querySelector('nav a[href="#home"]');
+  const projectsSection = document.querySelector('#projects');
+
+  function activateMenuLink() {
+    let scrollY = window.scrollY;
+    let projectsTop = projectsSection.offsetTop - 150;
+
+    // Om vi är ovanför Projects → markera Home
+    if (scrollY < projectsTop) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      homeLink.classList.add("active");
+      return;
+    }
+
+    // Annars → kör vanliga logiken
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute("id");
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateMenuLink);
+  activateMenuLink(); // Kör direkt vid laddning
+});

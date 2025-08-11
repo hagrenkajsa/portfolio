@@ -83,7 +83,7 @@ nav ul {
     justify-content: space-evenly;
 
          /*liquid glass*/
-         background: rgba(255, 255, 255, 0.042); /* transparent vit */
+         background: rgba(255, 255, 255, 0.471); /* transparent vit */
          backdrop-filter: blur(10px);
          -webkit-backdrop-filter: blur(10px); 
          border: 1px solid rgba(255, 255, 255, 0.3);
@@ -266,9 +266,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 25px;
 
 
 
