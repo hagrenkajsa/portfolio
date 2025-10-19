@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kajsa Hagren – Portfolio</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      re
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button class="back-btn" type="button" aria-label="Go back">
+      <svg
+        class="back-icon"
+        viewBox="0 0 13 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 23L1 12L12 1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <!----- Project overview ----->
+
+    <!----- Project Front ----->
+    <section class="project-detail">
+      <div class="project-front">
+        <h1 class="title">StoryAI</h1>
+        <div class="project-caption">
+          <p>
+            A mobile application that lets the user create a personalized story
+            with the help of generative AI.
+          </p>
+        </div>
+        <div class="project-detail-mocup bg-yellow">
+          <img src="./storyAI.png" />
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="project-detail-overview">
+        <h2>Project Overview</h2>
+        <h3>Task</h3>
+        <h4>Develop an interactive mobile application</h4>
+        <p>
+          In a group project for a course called Prototype Development in Mobile
+          Applications, we were tasked with creating an interactive mobile
+          application using any technique of our choice while working with an
+          agile approach.
+        </p>
+        <h3>Project Background</h3>
+        <h4>Using generative AI to create personalized children’s stories</h4>
+        <p>
+          After talking to friends and family, we discovered a problem — parents
+          spend a lot of money on children’s stories. A single book can cost
+          between SEK70 and SEK130. That might not seem like much, but the
+          stories are short and children grow quickly, so parents have to buy
+          new books often. We also noticed that children are not always
+          interested in the stories and can lose focus easily.<br /><br />
+
+          When we started this project, generative AI was still quite new, so we
+          wanted to explore if this could be part of the solutions.
+          <br /><br />
+        </p>
+        <h3>Our idea</h3>
+        <h4>
+          A mobile application for generating personalized children’s stories
+          with interactive moments
+        </h4>
+        <p>
+          We came up with the idea after several brainstorming sessions and
+          discussions. Our idea was to build an interactive application that
+          lets users create customized stories for children with the help of
+          generative AI. Our vision for the project was to give users quick and
+          easy access to an exciting story that engages children at any moment,
+          and we wanted to includ the following:
+        </p>
+        <ul>
+          <li>
+            <p>
+              Automatically generate personalized children's stories based on
+              user input with the help of generative AI
+            </p>
+          </li>
+          <li><p>Save favorite stories</p></li>
+          <li><p>Adjust the content according to the child's age</p></li>
+          <li>
+            <p>
+              Add interactive moments during and/or after the story to support
+              the child's language and cognitive development
+            </p>
+          </li>
+        </ul>
+
+        <img src="./concept.png" style="max-width: 100%; height: auto" />
+        <h3>Project Summary</h3>
+        <h4></h4>
+        <p>
+          In this team project, we designed and implemented a mobile application
+          with the functionality described above. The aim of the project was to
+          focus on implementation rather than design, and we worked in sprints
+          with an agile workflow. <br /><br />
+          The main focus of this project was to develop our idea into a working
+          mobile application, which is where we put most of our effort. We built
+          the application using React Native and JavaScript for the front-end,
+          used Firebase for data storage, Express.js to handle API requests, and
+          Azure Web Apps to host our API. <br /><br />
+          As the result of this project, we designed and implemented a mobile
+          application that allows the user to automatically generate a
+          personalized children’s story by entering the character’s name, story
+          environment, and plot. To make the stories suitable for a wider range
+          of ages, we also let the user enter the child’s age. Together with the
+          other inputs, this information generates a personalized story.
+          <br /><br />
+          To generate the story, we used OpenAI’s API. The user’s input is sent
+          together with a prepared prompt that asks the model to create a
+          children’s story based on the given information. <br /><br />
+          Each story includes three interactive moments and one final question.
+          The story is divided into four parts: Introduction, Conflict, Climax,
+          and Resolution. The interactive moments appear between these parts,
+          where the user can choose how the story continues, so for example,
+          “Should Lisa open the red door or the green door?”
+        </p>
+      </div>
+
+      <div class="info-cards">
+        <div class="card">
+          <h4>Duration</h4>
+          <p>10 weeks<br />50%</p>
+        </div>
+
+        <div class="card">
+          <h4>Role</h4>
+          <p>UX-design<br />Front-End</p>
+        </div>
+
+        <div class="card">
+          <h4>Tools</h4>
+          <p>Figma<br />React Native<br />JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-approach">
+      <h1>Project Approach</h1>
+
+      <!----- Project Planning ----->
+      <div class="category-grid">
+        <div class="category-name">
+          <h2>Process & Planning</h2>
+        </div>
+
+        <div class="category-content">
+          <h3>Workflow</h3>
+          <div class="category-block">
+            <h4>Agile workflow with five sprints</h4>
+            <p>
+              The project was conducted through sprints with an agile workflow
+              where we every other week presented our work and discussed
+              problems, findings and solutions with other groups and their
+              projects. <br /><br />
+              Our team met twice a week to discuss, help each other, merge our
+              work and plan the next steps. <br /><br />
+            </p>
+          </div>
+
+          <h3>Team Roles and Collaboration</h3>
+          <div class="category-block">
+            <h4>Divided the work into different areas of responsibility</h4>
+            <p>
+              We were four people in the group, and during the planning stage,
+              we decided to work closely together since it was the first time
+              for all of us developing a native mobile application. To keep the
+              project organized, we divided the work into different areas of
+              responsibility, with each person having one or two main areas to
+              focus on. <br /><br />My areas of responsibility were front-end
+              development and graphic design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!----- Design ----->
+      <div class="category-grid">
+        <div class="category-name">
+          <h2>Design</h2>
+        </div>
+
+        <div class="category-content">
+          <h3>Application flow</h3>
+          <div class="category-block">
+            <h4>
+              We discussed different ways to plan the interaction and
+              functionality of the application.
+            </h4>
+            <img src="./flow.png" style="max-width: 90%; height: auto" />
+          </div>
+
+          <h3>Prototypes</h3>
+          <div class="category-block">
+            <h4>
+              In an iterative design process, we went from rough sketches to
+              detailed wireframes.
+            </h4>
+            <img src="./wireframe.png" style="max-width: 70%; height: auto" />
+          </div>
+          <h3>User Testing</h3>
+          <h4>
+            During our prototype design process, we tested our ideas using A/B
+            testing.
+          </h4>
+        </div>
+      </div>
+
+      <!----- Implementation ----->
+      <div class="category-grid">
+        <div class="category-name">
+          <h2>Implementation</h2>
+        </div>
+
+        <div class="category-content">
+          <h3>Frontend</h3>
+          <div class="category-block">
+            <h4>React Native and JavaScript</h4>
+            <p>
+              After some research on frameworks and AI integration, we decided
+              to build our application with the framework React Native using
+              JavaScript, since it makes integration with other systems easier
+              for this project.
+            </p>
+          </div>
+
+          <h3>Data Storage</h3>
+          <div class="category-block">
+            <h4>Firebase</h4>
+            <p>
+              We used Firebase to store our data because it provides a good way
+              to handle real-time data updates, which we needed for the
+              interactive parts where the story is updated with new content
+              after each reader choice.
+            </p>
+          </div>
+          <h3>Backend</h3>
+          <h4>Express.js to handle API requests</h4>
+          <p>
+            We used Express.js to handle API requests and create a secure server
+            environment. Express.js is simple, flexible, and fast, which made it
+            a good fit for our project. It allowed us to build a POST API
+            endpoint that works as a middle layer between our client app and
+            OpenAI’s API. This setup helped us keep sensitive information, like
+            API keys, safe on the server. We also used Firebase authentication
+            to make sure only authorized users could access the API.
+          </p>
+
+          <h4>Azure Web App to host API</h4>
+          <p>
+            Our API was hosted with Azure Web App, which made it easy to deploy
+            and manage in the cloud. Azure’s integration with GitHub allowed
+            automatic updates every time we pushed new code, creating a smooth
+            CI/CD workflow. This saved time and made it easier to focus on
+            improving the application instead of handling manual deployments.
+          </p>
+        </div>
+      </div>
+
+      <!----- Result ----->
+      <div class="category-grid">
+        <div class="category-name">
+          <h2>Result</h2>
+        </div>
+
+        <div class="category-content">
+          <h3>What we implemented</h3>
+          <div class="category-block">
+            <p>
+              The result is an application where the user can easily and quickly
+              create a personalized story by giving input such as the story’s
+              character, environment, and plot. The user can also enter the
+              child’s age to get a story that fits that age.
+            </p>
+            <p>
+              To generate the story, we used OpenAI’s API. The user’s input is
+              sent together with a prepared prompt that asks the model to create
+              a children’s story based on the given information.
+              <br /><br />Each story includes three interactive moments and one
+              final question. The story is divided into four parts:
+              Introduction, Conflict, Climax, and Resolution. The interactive
+              moments appear between these parts, where the user can choose how
+              the story continues, for example “should Lisa open the red door or
+              the green door?”.
+            </p>
+
+            <p><strong>Story categories:</strong></p>
+            <ul>
+              <li>
+                <p>
+                  <strong>Random story (also called “quick story”):</strong>
+                  generates a story immediately without any user input.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Normal story:</strong> a standard story that takes the
+                  user’s instructions before generation.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Emotion detective:</strong> like a normal story, but
+                  ends with a question about an emotion experienced during the
+                  story.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Vocabulary builder:</strong> a story meant to explore
+                  difficult words. This category is not fully developed yet, so
+                  it currently works like a normal story. The idea is to
+                  highlight harder words and show a description when the user
+                  taps a word, and include a question about a word at the end.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!----- Demo ----->
+      <div class="category-grid">
+        <div class="category-name">
+          <h2>Demo</h2>
+        </div>
+
+        <div class="category-content">
+          <div class="project-demo-GRID">
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story1.png"
+                alt="Sign in page"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">1. Sign in page</p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story2.png"
+                alt="Home view"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                2. Home view: Here, you can continue reading the latest story,
+                go to your library with all stories, or create a new one.
+              </p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story3.png"
+                alt="Choose story category"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                3. Create story: Choose a category for the story.
+              </p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story4.png"
+                alt="Customize the story"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                4. Customize the story by adding character names, the plot, and
+                the environment.
+              </p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story5.png"
+                alt="Generated story overview"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">5. Overview of the generated story.</p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story6.png"
+                alt="Story view"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">6. Story view.</p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story7.png"
+                alt="Interactive choice"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                7. Interactive choice: The user decides how the story continues
+                by choosing between two options.
+              </p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story8.png"
+                alt="Story continues"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                8. The story continues based on the user’s choice.
+              </p>
+            </div>
+
+            <div class="demo">
+              <img
+                id="radius"
+                src="./story9.png"
+                alt="Story ending and question"
+                style="width: auto; height: 400px"
+              />
+              <p class="caption">
+                9. The story ends with a question related to the category chosen
+                at the beginning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const backBtn = document.querySelector(".back-btn");
+      if (backBtn) {
+        backBtn.addEventListener("click", () => {
+          if (window.history.length > 1) {
+            window.history.back(); // går till föregående sida
+          } else {
+            window.location.href = "/"; // fallback om det inte finns någon historik
+          }
+        });
+      }
+    </script>
+  </body>
+
+  <!-- ====== FOOTER / CONTACT ====== -->
+  <footer id="contact">
+    <div class="contact-container">
+      <h2>Contact me</h2>
+      <p class="center-text">
+        If you want to connect about an opportunity or just talk, feel free to
+        reach out using the links below.
+      </p>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/kajsahagren/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img
+            src="../../images/linkedin.png"
+            alt="LinkedIn icon"
+            style="max-width: 10vh; height: auto"
+          />
+        </a>
+        <a href="mailto:kajsa.hagren@gmail.com" aria-label="Email">
+          <img
+            src="../../images/gmail.png"
+            alt="Gmail icon"
+            style="max-width: 10vh; height: auto"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>

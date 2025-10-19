@@ -51,7 +51,6 @@ h3 {
   font-size: 18px;
   line-height: 160%;
   font-weight: 600;
-  /* bold */
   color: var(--accent-color);
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -63,7 +62,6 @@ h4 {
   font-size: 22px;
   line-height: 140%;
   font-weight: 600;
-  /* semibold */
   color: #090909;
   margin: 0;
   margin-bottom: 1rem;
@@ -73,7 +71,6 @@ h4 {
 p {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
-  /* fetare stil för rubriker */
   font-size: 1rem;
   color: rgb(65, 65, 65);
   letter-spacing: 0.5px;
@@ -100,7 +97,6 @@ a {
 .caption {
   /* font-family: 'Manrope', sans-serif; */
   font-weight: 400;
-  /* fetare stil för rubriker */
   font-size: 0.8rem;
   color: var(--primary-color);
   text-align: center;
@@ -140,7 +136,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 5rem;
-  /* höjd på headern */
   z-index: 1000;
 }
 
@@ -169,14 +164,11 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* mellanrum mellan länkar */
 }
 
 .menu a:hover {
   transform: scale(1.1);
-  /* gör länken 10% större */
   color: #212121;
-  /* ändra färg vid hover (valfritt) */
 }
 
 /*=======Ham Menu=========*/
@@ -233,12 +225,30 @@ nav {
 
 .intro-image img {
   width: 50%;
-  /* justera efter smak, t.ex. 50% eller 70% */
   height: auto;
   display: block;
 }
 
 /*projects---------*/
+
+/*===back button===*/
+
+.back-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: none;
+  border: none;
+  color: #161616;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.back-icon {
+  width: clamp(16px, 2.5vw, 28px);
+  height: auto;
+  display: block;
+}
 
 .project-container {
   display: flex;
@@ -265,10 +275,6 @@ nav {
   padding-bottom: 1rem;
 }
 
-/* .project-summary h3{
-  margin-top:1rem;
-  margin-bottom: 2rem;
-} */
 
 .project-mocup {
   flex: 1;
@@ -284,16 +290,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  /* mellanrum mellan text och pil */
   background-color: #000000;
-  /* svart bakgrund */
   color: #ffffff;
-  /* vit text */
   text-decoration: none;
   padding: 12px 15px;
-  /* gör knappen avlång */
   border-radius: 10px;
-  /* rundade hörn */
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -301,7 +302,6 @@ nav {
 
 .button-view-more a:hover {
   background-color: #222222;
-  /* lite ljusare svart vid hover */
   transform: translateY(-2px);
 }
 
@@ -311,11 +311,12 @@ nav {
   height: 20px;
   width: auto;
   stroke: #ffffff;
-  /* vit pil */
 }
 
 /*about---------*/
-#about {}
+.about-container h2 {
+  margin-top: 5vh;
+}
 
 .about-block {
   display: flex;
@@ -323,7 +324,6 @@ nav {
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 2rem;
-
 }
 
 .about-block-text {
@@ -392,6 +392,26 @@ footer {
 
 }
 
+.project-detail-overview img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 4vh;
+}
+
+.project-approach img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 4vh;
+}
+
+.project-approach p {
+  margin-bottom: 4vh;
+}
+
 .divider {
   width: 1px;
   height: 30vh;
@@ -409,13 +429,10 @@ footer {
 .project-demo-GRID {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 kolumner på stora skärmar */
   gap: 2rem;
-  /* mellanrum mellan rutorna */
   padding: 2rem;
 }
 
-/* Varje demo-container */
 .project-demo-GRID .demo {
   text-align: center;
 }
@@ -457,14 +474,7 @@ footer {
   width: 70%;
 }
 
-/* .project-detail-overview h4{
-    margin: 0;
-}
 
-.project-detail-overview p{
-    margin-bottom: 2.3rem;
-    margin-top: 0.7rem;
-} */
 
 
 .info-cards {
@@ -497,11 +507,6 @@ footer {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* .card h3 {
-  margin: 0; /* tar bort bottenmarginalen helt eller minskar den 
-} 
-*/
-
 
 .category-grid {
   display: flex;
@@ -520,14 +525,10 @@ footer {
   flex: 2;
   position: sticky;
   top: 60px;
-  /* höjd från toppen av fönstret där den ska fastna */
 
 
 }
 
-/* .category-name h2{
- margin:0;
-} */
 
 .category-content {
   display: flex;
@@ -535,19 +536,14 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   flex: 4;
+  padding-bottom: 6vh;
 }
 
-/* .category-content h4{
-  margin: 0;
-} */
 
-.category-block {
-  margin-bottom: 3rem;
-}
+
 
 .category-block ul li {
   margin-bottom: 12px;
-  /* öka eller minska efter smak */
 }
 
 /*==========TRUCK SECURITY=========*/
@@ -668,12 +664,21 @@ table thead th {
 
 }
 
+/*====STORY AI====*/
 
+.bg-yellow {
+  background: linear-gradient(135deg, #f5fff5, #6BAE69);
 
+}
 
 /*=====Responsive=======*/
 
 @media (max-width: 750px) {
+  .back-btn {
+    top: 0.9rem;
+    left: 0.9rem;
+  }
+
   header {
     display: flex;
     justify-content: flex-end;
@@ -709,7 +714,6 @@ table thead th {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    /* nedanför nav */
     right: 1rem;
     background-color: var(--accent-color-blur);
     backdrop-filter: blur(10px);
@@ -840,6 +844,10 @@ table thead th {
     height: 350px;
   }
 
+  .project-detail {
+    padding-top: 5vh;
+  }
+
   .project-detail-mocup {
     width: 90%;
 
@@ -910,7 +918,6 @@ table thead th {
 @media (max-width: 600px) {
   .project-demo-GRID {
     grid-template-columns: 1fr;
-    /* 1 kolumn på väldigt små skärmar */
   }
 
 }

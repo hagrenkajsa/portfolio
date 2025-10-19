@@ -23,6 +23,22 @@
     />
   </head>
   <body>
+    <button class="back-btn" type="button" aria-label="Go back">
+      <svg
+        class="back-icon"
+        viewBox="0 0 13 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 23L1 12L12 1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
     <!----- Project overview ----->
 
     <!----- Project Front ----->
@@ -630,7 +646,7 @@
             <div class="category-block"></div>
             <h4>Opportunities in the journey.</h4>
             <p>
-              Based on the theft journeyOpportunities in the journey., I
+              Based on the theft journeyOpportunities in the journey, I
               identified opportunities where Volvo could make an impact by
               supporting the driver and preventing theft.
             </p>
@@ -742,7 +758,7 @@
               serves as the prototype for this project
             </h4>
             <p>
-              To create this system description, I had to have a close dialog
+              To create this system description, I had to have a close dialogue
               with different stakeholders to make sure the concept was inside
               the frame of Volvo’s feasibility. <br />
               <br />
@@ -1157,7 +1173,18 @@
         </div>
       </div>
     </section>
-
+    <script>
+      const backBtn = document.querySelector(".back-btn");
+      if (backBtn) {
+        backBtn.addEventListener("click", () => {
+          if (window.history.length > 1) {
+            window.history.back(); // går till föregående sida
+          } else {
+            window.location.href = "/"; // fallback om det inte finns någon historik
+          }
+        });
+      }
+    </script>
     <!-- ---- Project Details-- -->
   </body>
   <!-- ====== FOOTER / CONTACT ====== -->
