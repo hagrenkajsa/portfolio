@@ -242,12 +242,17 @@ nav {
   color: #161616;
   cursor: pointer;
   z-index: 100;
+  padding: 8px;
+  /* större klickyta */
+
 }
 
 .back-icon {
   width: clamp(16px, 2.5vw, 28px);
-  height: auto;
+  width: 30px;
+  height: 30px;
   display: block;
+
 }
 
 .project-container {
@@ -661,8 +666,12 @@ table thead th {
 
 .bg-turcose {
   background: linear-gradient(135deg, #d8fff7, #1fa98e);
-
 }
+
+.bg-green {
+  background: linear-gradient(135deg, #d0efff, #005782);
+}
+
 
 /*====STORY AI====*/
 
