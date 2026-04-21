@@ -1178,11 +1178,22 @@
       if (backBtn) {
         backBtn.addEventListener("click", () => {
           if (window.history.length > 1) {
-            window.history.back(); // går till föregående sida
+            window.history.back();
           } else {
-            window.location.href = "/"; // fallback om det inte finns någon historik
+            window.location.href = "/";
           }
         });
+
+        let lastY = window.scrollY;
+        window.addEventListener("scroll", function () {
+          const currentY = window.scrollY;
+          if (currentY > lastY && currentY > 80) {
+            backBtn.classList.add("hide");
+          } else {
+            backBtn.classList.remove("hide");
+          }
+          lastY = currentY;
+        }, { passive: true });
       }
     </script>
     <!-- ---- Project Details-- -->
@@ -1208,7 +1219,7 @@
             style="max-width: 10vh; height: auto"
           />
         </a>
-        <a href="mailto:kajsa.hagren@gmail.com" aria-label="Email">
+        <a href="mailto:kajsa.hagren@netlight.com" aria-label="Email">
           <img
             src="../../images/gmail.png"
             alt="Gmail icon"

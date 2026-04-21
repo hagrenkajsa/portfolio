@@ -1,0 +1,5 @@
+.vscode/
+.playwright-mcp/
+node_modules/
+.env
+.env.local
